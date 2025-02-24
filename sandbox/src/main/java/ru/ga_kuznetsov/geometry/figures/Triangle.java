@@ -14,13 +14,13 @@ public class Triangle {
         return triangleSquare;
     }
     public static void printTrianglePerimeter(double sideA, double sideB, double sideC) {
-        double perimeter = getPerimeter(sideA, sideB, sideC);
+        double perimeter = getTrianglePerimeter(sideA, sideB, sideC);
         String trianglePerimeterText = (String.format( "Периметр треугольника со сторонами %f, %f и %f равен %f", sideA, sideB, sideC, perimeter));
 
         System.out.println(trianglePerimeterText);
     }
 
-    private static double getPerimeter(double sideA, double sideB, double sideC) {
+    public static double getTrianglePerimeter(double sideA, double sideB, double sideC) {
         double perimeter = (sideA + sideB + sideC);
         return perimeter;
     }

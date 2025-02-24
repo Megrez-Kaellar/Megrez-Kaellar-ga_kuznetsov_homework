@@ -5,7 +5,7 @@ import static java.lang.Math.PI;
 
 public class Circle {
     public static void printCircleSquare (double radius){
-        System.out.printf("Площадь круга при радиусе %f равна %f%n",radius, getCirclePerimeter(radius));
+        System.out.printf("Площадь круга при радиусе %f равна %f%n",radius, getCircleSquare(radius));
     }
 
     private static double getCircleSquare(double radius) {

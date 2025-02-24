@@ -7,6 +7,12 @@ public class TriangleTests {
     @Test
     void canCalculateTriangleArea(){
         var result = Triangle.getTriangleSquare( 5, 5, 5);
-        Assertions.assertEquals(10.82531, result);
+        Assertions.assertEquals(10.825317547305483, result);
+    };
+    @Test
+    void canCalculateTrianglePerimeter() {
+        double result = Triangle.getTrianglePerimeter(5, 5, 5);
+        Assertions.assertEquals(15, result);
     }
+
 }
