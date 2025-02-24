@@ -3,15 +3,15 @@ package ru.ga_kuznetsov.geometry.figures;
 import static java.lang.Math.sqrt;
 
 public class Triangle {
-    public static void printTriangleSquare(double sideA, double sideB, double sideC) {
-        String triangleSquareText = (String.format( "Площадь преугольника со сторонами %f, %f и %f равна %f", sideA, sideB, sideC, getTriangleSquare(sideA, sideB, sideC)));
-        System.out.println(triangleSquareText );
+    public static void printTriangleArea(double sideA, double sideB, double sideC) {
+        String triangleAreaText = (String.format( "Площадь преугольника со сторонами %.2f, %.2f и %.2f равна %.2f", sideA, sideB, sideC, getTriangleArea(sideA, sideB, sideC)));
+        System.out.println(triangleAreaText );
     }
 
-    public static double getTriangleSquare(double sideA, double sideB, double sideC) {
+    public static double getTriangleArea(double sideA, double sideB, double sideC) {
         double halfPerimeter = (sideA + sideA + sideC) / 2;
-        double triangleSquare = sqrt((halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC)));
-        return triangleSquare;
+        double triangleArea = sqrt((halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC)));
+        return triangleArea;
     }
     public static void printTrianglePerimeter(double sideA, double sideB, double sideC) {
         double perimeter = getTrianglePerimeter(sideA, sideB, sideC);
